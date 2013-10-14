@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use postgresql
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -31,6 +31,27 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+group :development, :test do
+  gem 'rspec-rails',  '~> 2.14.0'
+  gem 'factory_girl_rails', '~> 4.2.1', :require => false
+end
+
+group :test do
+  gem 'capybara', '~> 2.1.0'
+  gem 'selenium-webdriver'
+  gem 'simplecov'
+end
+
+group :development do
+  gem 'pry'
+  gem 'better_errors'
+  gem "binding_of_caller"
+
+
+end
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
