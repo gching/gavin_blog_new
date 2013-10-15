@@ -1,15 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/gching/Projects/gavin_blog_new/app/models/chapter.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        null
-      ]
     },
-    "timestamp": 1381741033
+    "timestamp": 1381863685
   }
 }

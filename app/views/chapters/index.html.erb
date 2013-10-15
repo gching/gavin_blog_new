@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="large-12 columns">
+      <p><img src="http://placehold.it/1000x400&text=[banner img]" /></p>
+    <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-11 small-centered columns">
+    <ol class="chapters">
+      <% @chapters.order("created_at ASC").each do |chapter| %>
+      	<li id="<%= chapter.id %>">
+		<h3><%= link_to "Chapter #{chapter.id} - #{chapter.title}", chapter_path(chapter)  %></h3>
+		<h6>Had time to make this <%= time_ago_in_words(chapter.created_at)%> ago.</h6>
+		<div class="row">
+		  <div class="small-9 small-centered large-uncentered columns"><p><%= chapter.body %></p></div>
+		</div>
+		</li>
+	  <% end %>
+	</ol> 
+    </div>
+  </div>
