@@ -2,7 +2,7 @@ require 'spec_helper'
 
 
 describe "When going through pages" do
-	let(:title) {"My Story of my Journey"}
+	let(:title) {"My Story A detailed book on my \"rife\" journey."}
 	it "have root path be the blog / story book" do
 		visit '/'
 		expect(page).to have_content title

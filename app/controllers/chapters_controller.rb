@@ -12,7 +12,7 @@ class ChaptersController < ApplicationController
 	end
 
 	def create
-		@chapter = Chapter.new(params[:chapter])
+		@chapter = Chapter.new(permitted_params.chapter)
 		if @chapter.save
 			redirect_to chapter_path(@chapter)
 		else
@@ -26,7 +26,7 @@ class ChaptersController < ApplicationController
 
 	def update
 		@chapter = Chapter.find(params[:id])
-		if @chapter.update_attributes(params[:chapter])
+		if @chapter.update_attributes(permitted_params.chapter)
 			redirect_to chapter_path(@chapter)
 		else
 			render 'edit'

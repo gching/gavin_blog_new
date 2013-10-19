@@ -1,0 +1,17 @@
+<ul class="button-group round even-3 pull-center">
+	 		 <li>
+	 		 <% if @chapter.previous %>
+	 		 	<%= link_to "Previous", @chapter.previous, class: "button" %>
+	 		 <% else %>
+	 		 	<a href="#" class="button disabled">Previous</a>
+	 		 <% end %>
+	 		 </li>
+	  		 <li><%= link_to "Random dat Chapter", @chapter.random_chapter, class: "button"%></li>
+	  		 <li>
+	  		 <% if @chapter.next %>
+	  		 	<%= link_to "Next", @chapter.next, class: "button"%>
+	  		 <% else %>
+	  		 	<a href="#" class="button disabled">Next</a>
+	  		 <% end %>
+	  		 </li>
+</ul>
