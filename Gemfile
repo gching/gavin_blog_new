@@ -21,8 +21,9 @@ gem 'zurb-foundation'
 ###############################################
 
 # For backend admin dashboard
-gem 'activeadmin', github: 'gregbell/active_admin'
-
+#gem 'activeadmin', github: 'gregbell/active_admin'
+#gem 'inherited_resources',  "1.3.1"
+gem 'rails_admin'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -74,3 +75,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+gem "devise"
