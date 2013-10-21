@@ -27,6 +27,7 @@ gem 'rails_admin'
 gem 'ckeditor'
 gem "carrierwave"
 gem "mini_magick"
+gem 'fog'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

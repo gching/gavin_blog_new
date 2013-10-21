@@ -1,0 +1,4 @@
+aws_access_key: "INSERT AWS ACCESS KEY"
+aws_secret_key: "INSERT AWS SECRET KEY"
+aws_region: "INSERT AWS REGION"
+aws_bucket: "INSERT AWS BUCKET"
