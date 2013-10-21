@@ -24,6 +24,9 @@ gem 'zurb-foundation'
 #gem 'activeadmin', github: 'gregbell/active_admin'
 #gem 'inherited_resources',  "1.3.1"
 gem 'rails_admin'
+gem 'ckeditor'
+gem "carrierwave"
+gem "mini_magick"
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

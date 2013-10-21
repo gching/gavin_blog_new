@@ -30,7 +30,7 @@ RailsAdmin.config do |config|
   # config.excluded_models = ['Chapter']
 
   # Include specific models (exclude the others):
-  # config.included_models = ['Chapter']
+   config.included_models = ['Chapter']
 
   # Label methods for model instances:
   # config.label_methods << :description # Default is [:name, :title]
@@ -54,7 +54,7 @@ RailsAdmin.config do |config|
 
   ###  Chapter  ###
 
-  # config.model 'Chapter' do
+   config.model 'Chapter' do
 
   #   # You can copy this to a 'rails_admin do ... end' block inside your chapter.rb model definition
 
@@ -66,7 +66,7 @@ RailsAdmin.config do |config|
 
   #     configure :id, :integer 
   #     configure :title, :string 
-  #     configure :body, :text 
+      configure :body, :ck_editor
   #     configure :created_at, :datetime 
   #     configure :updated_at, :datetime 
 
@@ -93,6 +93,6 @@ RailsAdmin.config do |config|
   #     # also see the create, update, modal and nested sections, which override edit in specific cases (resp. when creating, updating, modifying from another model in a popup modal or modifying from another model nested form)
   #     # you can override a cross-section field configuration in any section with the same syntax `configure :field_name do ... end`
   #     # using `field` instead of `configure` will exclude all other fields and force the ordering
-  # end
+   end
 
 end
