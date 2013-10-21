@@ -17,3 +17,6 @@
 
 # Ignore Environment Variables
 /config/application.yml
+
+# Ignore the uploads from ckeditor and tmp
+/public/uploads
