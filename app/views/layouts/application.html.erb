@@ -22,14 +22,11 @@
   </head>
 
   <body>
-   <div class="row">
-    <div class="large-12 columns">
-      <h1><%= link_to "My Story", root_path %> <small>A detailed book on my "rife" journey.</small></h1>
-      <hr/>
-    </div>
-  </div>
+  <%= render 'shared/header' %>
 
   <%= yield %>
+
+  <%= render 'shared/footer' %>
 
     <%= javascript_include_tag "application" %>
   </body>

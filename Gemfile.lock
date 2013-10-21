@@ -1,3 +1,19 @@
+GIT
+  remote: https://github.com/fog/fog.git
+  revision: 6d2abe4e2b477f55c3b2581e192dabcc7546e685
+  specs:
+    fog (1.16.0)
+      builder
+      excon (~> 0.27.0)
+      formatador (~> 0.2.0)
+      mime-types
+      multi_json (~> 1.0)
+      net-scp (~> 1.1)
+      net-ssh (>= 2.1.3)
+      nokogiri (~> 1.5)
+      ruby-hmac
+      unicode (~> 0.4.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -78,17 +94,6 @@ GEM
     faker (1.1.2)
       i18n (~> 0.5)
     ffi (1.9.0)
-    fog (1.16.0)
-      builder
-      excon (~> 0.27.0)
-      formatador (~> 0.2.0)
-      mime-types
-      multi_json (~> 1.0)
-      net-scp (~> 1.1)
-      net-ssh (>= 2.1.3)
-      nokogiri (~> 1.5)
-      ruby-hmac
-      unicode (~> 0.4.4)
     font-awesome-rails (3.2.1.3)
       railties (>= 3.2, < 5.0)
     formatador (0.2.4)
@@ -246,7 +251,7 @@ DEPENDENCIES
   devise
   factory_girl_rails (~> 4.2.1)
   faker (~> 1.1.2)
-  fog
+  fog!
   jbuilder (~> 1.2)
   jquery-rails
   mini_magick
