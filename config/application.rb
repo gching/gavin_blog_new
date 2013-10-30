@@ -7,9 +7,9 @@ require 'rails/all'
 Bundler.require(:default, Rails.env)
 
 ## Application environment variables
-CONFIG = YAML.load(File.read(File.expand_path('../application.yml', __FILE__)))
-CONFIG.merge! CONFIG.fetch(Rails.env, {})
-CONFIG.symbolize_keys!
+#CONFIG = YAML.load(File.read(File.expand_path('../application.yml', __FILE__)))
+#CONFIG.merge! CONFIG.fetch(Rails.env, {})
+#CONFIG.symbolize_keys!
 
 module GavinBlogNew
   class Application < Rails::Application

@@ -23,6 +23,9 @@ gem 'zurb-foundation'
 gem 'foundation-icons-sass-rails'
 ###############################################
 
+## To configure environment constants
+gem 'figaro'
+
 # For backend admin dashboard
 #gem 'activeadmin', github: 'gregbell/active_admin'
 #gem 'inherited_resources',  "1.3.1"
