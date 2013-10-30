@@ -26,6 +26,8 @@ gem 'foundation-icons-sass-rails'
 ## To configure environment constants
 gem 'figaro'
 
+gem 'rails_12factor', group: :production
+
 # For backend admin dashboard
 #gem 'activeadmin', github: 'gregbell/active_admin'
 #gem 'inherited_resources',  "1.3.1"
