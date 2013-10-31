@@ -26,6 +26,6 @@ module GavinBlogNew
     # config.i18n.default_locale = :de
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
 
-    config.serve_static_assets = true
+    #config.serve_static_assets = true
   end
 end
