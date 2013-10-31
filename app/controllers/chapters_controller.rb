@@ -39,4 +39,10 @@ class ChaptersController < ApplicationController
 		redirect_to root_path
 	end
 
+	## Provides feed for atom
+	## Not conventional
+	def feed
+		@chapters = Chapter.all
+	end
+
 end
