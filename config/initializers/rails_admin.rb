@@ -66,7 +66,8 @@ RailsAdmin.config do |config|
 
   #     configure :id, :integer 
   #     configure :title, :string 
-      configure :body, :ck_editor
+      #configure :body, :ck_editor
+
   #     configure :created_at, :datetime 
   #     configure :updated_at, :datetime 
 
@@ -88,7 +89,10 @@ RailsAdmin.config do |config|
   #       # sort_reverse true     # Sort direction (default is true for primary key, last created first)
   #     end
   #     show do; end
-  #     edit do; end
+       edit do
+        field :title, :string
+        field :body, :ck_editor
+       end
   #     export do; end
   #     # also see the create, update, modal and nested sections, which override edit in specific cases (resp. when creating, updating, modifying from another model in a popup modal or modifying from another model nested form)
   #     # you can override a cross-section field configuration in any section with the same syntax `configure :field_name do ... end`
