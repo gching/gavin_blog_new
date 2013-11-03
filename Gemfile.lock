@@ -212,7 +212,6 @@ GEM
       multi_json (~> 1.0)
       rubyzip (< 1.0.0)
       websocket (~> 1.0.4)
-    simple_hashtag (0.1.8)
       rails (> 3.2.0)
     simplecov (0.7.1)
       multi_json (~> 1.0)
