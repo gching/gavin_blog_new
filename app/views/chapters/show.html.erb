@@ -4,7 +4,7 @@
 	    <%= render 'nav' %>
 		<h3> Chapter <%= @chapter.id %> - <%= @chapter.title %></h3>
 		<div class="row">
-		  <div class="small-11 small-centered columns"><p><%= raw(@chapter.body) %></p></div>
+		  <div class="small-11 small-centered columns"><p><%= raw(auto_link(@chapter.body)) %></p></div>
 		  <br/>
 		  <div class="small-11 small-centered columns">
 		  	<%= render 'comments' %>

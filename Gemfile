@@ -26,7 +26,11 @@ gem 'foundation-icons-sass-rails'
 ## To configure environment constants
 gem 'figaro'
 
+## To properly set up assets for Heroku with Rails 4 --Ck_editor does not work
 gem 'rails_12factor', group: :production
+
+## Gem to incorporate hashtags
+gem 'twitter-text'
 
 # For backend admin dashboard
 #gem 'activeadmin', github: 'gregbell/active_admin'
