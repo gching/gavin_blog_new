@@ -210,9 +210,9 @@ GEM
     selenium-webdriver (2.35.1)
       childprocess (>= 0.2.5)
       multi_json (~> 1.0)
+      rails (> 3.2.0)
       rubyzip (< 1.0.0)
       websocket (~> 1.0.4)
-      rails (> 3.2.0)
     simplecov (0.7.1)
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
@@ -283,7 +283,6 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sdoc
   selenium-webdriver
-  simple_hashtag
   simplecov
   turbolinks
   twitter-text
