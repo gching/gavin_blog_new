@@ -17,8 +17,9 @@ gem 'coffee-rails', '~> 4.0.0'
 
 ################## Styling #####################
 ## Foundation 4
-gem 'zurb-foundation'
-
+#gem 'zurb-foundation'
+## Foundation 5
+ gem 'foundation-rails'
 ## Font icons for Foundation
 gem 'foundation-icons-sass-rails'
 ###############################################
