@@ -27,5 +27,6 @@ module GavinBlogNew
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
 
     #config.serve_static_assets = true
+    config.assets.precompile += Ckeditor.assets
   end
 end
