@@ -1,3 +1,5 @@
 == Gavin Ching's Blog :>
 
 It's cute if you want to look at the code.
+
+www.gavinching.me
