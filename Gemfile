@@ -62,11 +62,15 @@ end
 
 group :development, :test do
   gem 'rspec-rails',  '~> 2.14.0'
+  gem 'rspec-nc'
   gem 'factory_girl_rails', '~> 4.2.1', :require => false
+  ## Add it to bundle as guard-rails requires it to use.
+  gem 'zeus'
+  gem 'capybara', '~> 2.1.0'
 end
 
 group :test do
-  gem 'capybara', '~> 2.1.0'
+
   gem 'selenium-webdriver'
   gem 'simplecov'
 end
@@ -75,8 +79,8 @@ group :development do
   gem 'pry'
   gem 'better_errors'
   gem "binding_of_caller"
-
-
+  gem 'guard-rails'
+  gem 'guard-rspec', require: false
 end
 
 
