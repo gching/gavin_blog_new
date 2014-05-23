@@ -1,9 +1,11 @@
-<div class="row">
-    <div class="large-10 columns">
-      <h1><%= link_to "My Story", root_path %> <small>A detailed book on my "rife" journey.   <%= link_to image_tag("feed-icon-28x28.png"), feed_path %>
-      </h1>
+
+  <div class="row">
+      <div class="large-10 columns">
+        <h1><%= link_to "My Story", root_path %> <small>A detailed book on my "rife" journey.   <%= link_to image_tag("feed-icon-28x28.png"), feed_path %>
+        </h1>
+      </div>
+      <div class="large-2 columns header-about clearfix"><a href="#" data-reveal-id="aboutModal" class="success button radius">Who dat?</a></div>
     </div>
-    <div class="large-2 columns header-about clearfix"><a href="#" data-reveal-id="aboutModal" class="success button radius">Who dat?</a></div>
-</div>
+
 <!-- About me button information -->
 <%= render 'shared/about' %>
