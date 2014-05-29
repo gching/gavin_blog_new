@@ -2,9 +2,10 @@ require 'spec_helper'
 
 
 describe Chapter do
+	let(:new_chapter) {build(:chapter)}
 
 	it "has a valid factory" do
-		expect(build(:chapter)).to be_valid
+		expect(new_chapter).to be_valid
 	end
 
 	it "is valid with an title and body" do
@@ -22,9 +23,13 @@ describe Chapter do
 
 
 	it "has a slug attribute and it should eql" do
-		chapter = build(:chapter)
+		chapter = create(:chapter)
 		title = chapter.title
-		expect(chapter.slug).to eql(chapter.slug)
+		expect(chapter.slug).to eql(title.parameterize)
+	end
+
+	it "should raise an error if it generates an admin slug" do
+		expect(build(:chapter, title: "admin")).to have(1).errors_on(:slug)
 	end
 
 end

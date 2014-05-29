@@ -67,6 +67,7 @@ group :development, :test do
   ## Add it to bundle as guard-rails requires it to use.
   gem 'zeus'
   gem 'capybara', '~> 2.1.0'
+  gem 'database_cleaner'
 end
 
 group :test do
