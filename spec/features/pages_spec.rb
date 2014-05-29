@@ -18,3 +18,24 @@ describe "When going through pages" do
 
 
 end
+
+describe "when going to a chapter" do
+
+	before :each do
+		@chapter = create(:chapter, title: "Some Title")
+		visit '/'
+
+	end
+
+	it "should have the chapter title" do
+		expect(page).to have_content(@chapter.title)
+	end
+
+	it "should have the right link url from clicking it" do
+		click_link @chapter.title
+		expect(current_path).to eql("/chapters/#{@chapter.slug}")
+	end
+
+
+
+end

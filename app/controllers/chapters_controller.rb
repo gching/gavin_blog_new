@@ -1,13 +1,15 @@
 class ChaptersController < ApplicationController
+
+	## Helps direct it to the right chapter through it's slug.
+	before_filter :find_chapter, only: [:show, :edit, :update, :destroy]
 	def index
 		@chapters = Chapter.all
 	end
 
 	def show
-		@chapter = Chapter.find(params[:id])
 	end
 
-	def new 
+	def new
 		@chapter = Chapter.new
 	end
 
@@ -18,14 +20,12 @@ class ChaptersController < ApplicationController
 		else
 			render 'new'
 		end
-	end 
+	end
 
 	def edit
-		@chapter = Chapter.find(params[:id])
 	end
 
 	def update
-		@chapter = Chapter.find(params[:id])
 		if @chapter.update_attributes(permitted_params.chapter)
 			redirect_to chapter_path(@chapter)
 		else
@@ -34,7 +34,6 @@ class ChaptersController < ApplicationController
 	end
 
 	def destroy
-		@chapter = Chapter.find(params[:id])
 		@chapter.destroy
 		redirect_to root_path
 	end
@@ -45,4 +44,10 @@ class ChaptersController < ApplicationController
 		@chapters = Chapter.all
 	end
 
+
+private
+	## Finds the page by its slug
+	def find_chapter
+		@chapter = Chapter.find_by_slug!(params[:id])
+	end
 end

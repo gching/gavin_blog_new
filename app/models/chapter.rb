@@ -10,32 +10,25 @@ class Chapter < ActiveRecord::Base
 
 
 
-	## Finds the  next chapter if it exists
+	## Finds the  next chapter if it exists, if not, returns nil.
 	def next
-		self.class.find(:first,
-			:conditions => ['id > ?', self.id],
-			:order => 'id')
+	  Chapter.find_by id: self.id+1
 	end
 
-	## Finds the previous chapter if it exists
+	## Finds the previous chapter if it exists, if not, returns nil.
 	def previous
-		self.class.find(:first,
-			:conditions => ['id < ?', self.id],
-			:order => 'id desc')
-
+		Chapter.find_by id: self.id-1
 	end
 
 
 	## Finds a random chapter
 	def random_chapter
-		rand_id = rand(self.class.count)+1
+		rand_id = rand(Chapter.count)+1
 		while rand_id == self.id
-			rand_id = rand(self.class.count)
+			rand_id = rand(Chapter.count)+1
 		end
-		#rand_id = rand(Model.count)
-	    self.class.first(:conditions => [ "id >= ?", rand_id])
 
-	 	#Model.first(:conditions => [ "id >= ?", rand_id])
+		Chapter.where("id >= ?", rand_id).first
 
 	end
 
