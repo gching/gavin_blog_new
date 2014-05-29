@@ -77,4 +77,8 @@ GavinBlogNew::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  ## Precompile fix
+  config.assets.compile = true
+  config.assets.precompile = ['*.js', '*.css', '*.css.erb']
 end
