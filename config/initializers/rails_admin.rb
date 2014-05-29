@@ -64,12 +64,12 @@ RailsAdmin.config do |config|
 
   #   # Found columns:
 
-  #     configure :id, :integer 
-  #     configure :title, :string 
+  #     configure :id, :integer
+  #     configure :title, :string
       #configure :body, :ck_editor
 
-  #     configure :created_at, :datetime 
-  #     configure :updated_at, :datetime 
+  #     configure :created_at, :datetime
+  #     configure :updated_at, :datetime
 
   #   # Cross-section configuration:
 
