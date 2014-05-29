@@ -12,7 +12,7 @@ class Chapter < ActiveRecord::Base
 
 	## Finds the  next chapter if it exists, if not, returns nil.
 	def next
-	  Chapter.find_by id: self.id+1
+    Chapter.find_by id: self.id+1
 	end
 
 	## Finds the previous chapter if it exists, if not, returns nil.

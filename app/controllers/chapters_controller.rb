@@ -13,6 +13,8 @@ class ChaptersController < ApplicationController
 		@chapter = Chapter.new
 	end
 
+	## Removed as rails admin overides it.
+=begin
 	def create
 		@chapter = Chapter.new(permitted_params.chapter)
 		if @chapter.save
@@ -21,6 +23,7 @@ class ChaptersController < ApplicationController
 			render 'new'
 		end
 	end
+=end
 
 	def edit
 	end
