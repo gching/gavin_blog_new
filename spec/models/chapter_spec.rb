@@ -21,5 +21,10 @@ describe Chapter do
 	end
 
 
+	it "has a slug attribute and it should eql" do
+		chapter = build(:chapter)
+		title = chapter.title
+		expect(chapter.slug).to eql(chapter.slug)
+	end
 
 end
