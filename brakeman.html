@@ -168,8 +168,8 @@ p {
     <td>4.0.3</td>
     <td>2.5.0
     <td>
-      2014-05-30 00:47:34 -0700<br><br>
-      0.22358 seconds
+      2014-05-30 00:56:07 -0700<br><br>
+      0.215282 seconds
     </td>
     <td>BasicAuth, ContentTag, CrossSiteScripting, DefaultRoutes, Deserialize, DetailedExceptions, DigestDoS, EscapeFunction, Evaluation, Execute, FileAccess, FilterSkipping, ForgerySetting, HeaderDoS, I18nXSS, JRubyXML, JSONParsing, LinkTo, LinkToHref, MailTo, MassAssignment, ModelAttrAccessible, ModelAttributes, ModelSerialize, NestedAttributes, NumberToCurrency, QuoteTableName, Redirect, RegexDoS, Render, RenderDoS, ResponseSplitting, SQL, SQLCVEs, SSLVerify, SafeBufferManipulation, SanitizeMethods, SelectTag, SelectVulnerability, Send, SendFile, SessionSettings, SimpleFormat, SingleQuotes, SkipBeforeFilter, StripTags, SymbolDoS, TranslateBug, UnsafeReflection, ValidationRegex, WithoutProtection, YAMLParsing</td>
   </tr>
@@ -199,7 +199,7 @@ p {
   </tr>
   <tr>
     <td>Security Warnings</td>
-    <td>1 <span class='high-confidence'>(1)</span></td>
+    <td>0 <span class='high-confidence'>(0)</span></td>
   </tr>
   
   <tr>
@@ -209,76 +209,4 @@ p {
   
 </table>
 <br>
-<table>
-  <tr>
-    <th>Warning Type</th>
-    <th>Total</th>
-  </tr>
-  
-  <tr>
-    <td>Session Setting</td>
-    <td>1</td>
-  </tr>
-  
-</table>
-<br>
-<h2>Security Warnings</h2>  
-<table>
-  <tr>
-    <th>Confidence</th>
-    <th>Class</th>
-    <th>Method</th>
-    <th>Warning Type</th>
-    <th>Message</th>
-  </tr>
-  
-  <tr>
-    <td><span class='high-confidence'>High</span></td>
-    <td></td>
-    <td></td>
-    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/session_setting/">Session Setting</a></td>
-    <td><div class='warning_message' onClick="toggle('context1');toggle('message1');toggle('full_message1')" >Session secret should not be included in version control near line 12<table id='context1' class='context' style='display:none'><caption>config/initializers/secret_token.rb</caption>        <tr class='context first'>
-          <td class='context_line'>
-            <pre class='context'>7</pre>
-          </td>
-          <td class='context'>
-            <pre class='context'># no regular words or you&#39;ll be exposed to dictionary attacks.</pre>
-          </td>
-        </tr>
-          <tr class='context alt'>
-            <td class='context_line'>
-              <pre class='context'>8</pre>
-            </td>
-            <td class='context'>
-              <pre class='context'># You can use `rake secret` to generate a secure secret key.</pre>
-            </td>
-          </tr>
-          <tr class='context'>
-            <td class='context_line'>
-              <pre class='context'>10</pre>
-            </td>
-            <td class='context'>
-              <pre class='context'># Make sure your secret_key_base is kept private</pre>
-            </td>
-          </tr>
-          <tr class='context alt near_error'>
-            <td class='context_line'>
-              <pre class='context'>11</pre>
-            </td>
-            <td class='context'>
-              <pre class='context'># if you&#39;re sharing your code publicly.</pre>
-            </td>
-          </tr>
-          <tr class='context error'>
-            <td class='context_line'>
-              <pre class='context'>12</pre>
-            </td>
-            <td class='context'>
-              <pre class='context'>GavinBlogNew::Application.config.secret_key_base = &#39;8f22b71116f51cb5e5ba2843b19ea6411bbc98b90d9a3dfd9e36e34c23b1e863f7ed6ab33faa10e003b646391abc86484609002cf4566e0a09af3d61ac1f9a45&#39;</pre>
-            </td>
-          </tr>
-</table></div></td>
-  </tr>
-  
-</table>
 </body></html>
