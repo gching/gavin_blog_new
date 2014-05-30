@@ -21,8 +21,8 @@
 # Ignore the uploads from ckeditor and tmp
 /public/uploads
 
-# Ignore the env file.
-.env
-
 # Ignore secret token.
 /config/initializers/secret_token.rb
+
+# Ignore the env file.
+.env
