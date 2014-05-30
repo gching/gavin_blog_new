@@ -82,6 +82,8 @@ group :development do
   gem "binding_of_caller"
   gem 'guard-rails'
   gem 'guard-rspec', require: false
+
+  gem 'rack-mini-profiler'
 end
 
 
