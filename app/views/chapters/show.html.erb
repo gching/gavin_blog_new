@@ -1,17 +1,16 @@
-<% provide(:title, "Chapter #{@chapter.id}") %>
+<% provide(:title, "Chapter #{chapter.id}") %>
  <div class="row">
     <div class="small-11 small-centered columns">
-	    <%= render 'nav', chapter: @chapter %>
-		<h3>Chapter <%= @chapter.id %> - <%= @chapter.title %>    <%= render 'tweet' %></h3>
-		<h6 class="subheader">Wrote this baby on <%= @chapter.created_at.strftime("%B %d, %Y")%></h6>
+	    <%= render 'nav', chapter: chapter %>
+		<h3>Chapter <%= chapter.id %> - <%= chapter.title %>    <%= render 'tweet' %></h3>
+		<h6 class="subheader">Wrote this baby on <%= chapter.created_at.strftime("%B %d, %Y")%></h6>
 		<div class="row">
-		  <div class="small-11 small-centered columns"><p><%= raw(@chapter.body) %></p></div>
+		  <div class="small-11 small-centered columns"><p><%= raw(chapter.body) %></p></div>
 		  <br/>
 		  <%# auto_link for twitter hashtags %>
 		  <div class="small-11 small-centered columns">
 		  	<%= render 'comments' %>
 		  </div>
-		  <!-- <div class="small-9 small-centered large-uncentered columns"><p><%= raw(@chapter.body) %></p></div> -->
 		</div>
     </div>
   </div>
