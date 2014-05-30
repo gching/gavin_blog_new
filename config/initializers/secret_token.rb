@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-GavinBlogNew::Application.config.secret_key_base = '8f22b71116f51cb5e5ba2843b19ea6411bbc98b90d9a3dfd9e36e34c23b1e863f7ed6ab33faa10e003b646391abc86484609002cf4566e0a09af3d61ac1f9a45'
+GavinBlogNew::Application.config.secret_key_base = '202a701d96e29ac9d8eb782912b1e5527bb514efc4b181dea54caf7c1da49778680aa15fed4e26ad301684add9cd137dba526da902a2002c104f2dd08ef1719c'
