@@ -35,16 +35,18 @@ gem 'rails_12factor', group: :production
 gem 'twitter-text'
 
 # For backend admin dashboard
-#gem 'activeadmin', github: 'gregbell/active_admin'
-#gem 'inherited_resources',  "1.3.1"
 gem 'rails_admin'
+# Editor for chapters.
 gem 'ckeditor'
-gem "carrierwave"
-gem "mini_magick"
-gem 'fog', :git => 'https://github.com/fog/fog.git'
 
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+## Used to upload files to AWS
+gem "carrierwave"
+
+## Used to handle image converting and uploading
+gem "mini_magick"
+
+## Helps with connection with AWS.
+gem 'fog', :git => 'https://github.com/fog/fog.git'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -56,12 +58,25 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'faker', "~> 1.1.2"
 
+
+# Use unicorn as the app server
+gem 'unicorn'
+
+
+## Use devise for a simple easy user setup
+gem "devise"
+
+
+## Use new relic to monitor blog.
+gem 'newrelic_rpm'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
 group :development, :test do
+  ## Below are used for testing
   gem 'rspec-rails',  '~> 2.14.0'
   gem 'rspec-nc'
   gem 'factory_girl_rails', '~> 4.2.1', :require => false
@@ -72,12 +87,13 @@ group :development, :test do
 end
 
 group :test do
-
+  ## Used for browser automation and coverage
   gem 'selenium-webdriver'
   gem 'simplecov'
 end
 
 group :development do
+  ## Used for testing and shell
   gem 'pry'
   gem 'better_errors'
   gem "binding_of_caller"
@@ -86,20 +102,3 @@ group :development do
 
   gem 'rack-mini-profiler'
 end
-
-
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the app server
-gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
-
-gem "devise"
