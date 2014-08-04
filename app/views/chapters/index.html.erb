@@ -1,13 +1,7 @@
 <%# content_for :head, auto_discovery_link_tag(:atom, feed_path) %>
-<div class="gavin-hero">
-  <div class="row">
-    <div class="large-12 columns large-centered">
-      <ul data-orbit>
-        <%= render 'shared/orbit' %>
-      </ul>
-    </div>
-  </div>
-</div>
+<ul class="orbit-me" data-orbit>
+  <%= render 'shared/orbit' %>
+</ul>
 
   <div class="row">
     <div class="small-11 small-centered columns">
