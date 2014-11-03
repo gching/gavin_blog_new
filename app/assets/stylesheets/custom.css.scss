@@ -1,33 +1,30 @@
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.header-fake {
+  background-color: #d2e8ee;
+  display: none;
+}
+.header-fake h1 {
+  font-size: 50px;
+}
 .header-about {
   padding-top: 17px;
-
 }
 .header-fix {
   background-attachment:fixed;
 }
 
-
-.chapters {
-  list-style: none;
-  margin: 10px 0 0 0;
-
-  li {
-    padding: 30px 0;
-    border-bottom: 1px solid #e8e8e8;
-    &:last-child{
-      border-bottom: none;
-    }
-  }
-}
-
-.orbit-me img {
-  width: 100%;
-  height: auto;
-}
-
 .container {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.container-padding {
+  padding-top: 200px;
 }
 
 section.module.parallax {
@@ -39,28 +36,56 @@ section.module.parallax {
   background-size: cover;
 }
 section.module.parallax h1 {
+  color: rgba(255, 255, 255, 1.0);
+  font-size: 20px;
+  line-height: 100px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax h2 {
+  background-color: rgba(0,0,0,0.3);   /*opaque black */
   color: rgba(255, 255, 255, 0.8);
   font-size: 20px;
-  line-height: 600px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+section.module.parallax .about-me {
+  text-align: center;
+}
+
 @media all and (min-width: 600px) {
-  section.module h2 {
-    font-size: 42px;
-  }
-  section.module p {
-    font-size: 20px;
-  }
+
   section.module.parallax h1 {
     font-size: 30px;
   }
 }
 @media all and (min-width: 960px) {
+
+
   section.module.parallax h1 {
     font-size: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 40em) {
+  .header-fake h1 {
+    font-size: 46px;
+  }
+  .header-fake h1 small {
+    display: none;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .header-fake h1 {
+    font-size: 50px;
+  }
+  .header-fake h1 small {
+    font-size: 16px;
   }
 }
