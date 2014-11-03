@@ -1,5 +1,11 @@
 <% provide(:title, "Chapter #{chapter.id}") %>
- <div class="row">
+<section id="<%=chapter.id%>-section" class="module parallax" style="background-image: url('<%= chapter.banner_url %>')">
+  <div class="container">
+    <h1><%="Chapter #{chapter.id}"%></h1>
+  </div>
+</section>
+
+ <div class="row" style="padding-top: 50px;">
     <div class="small-11 small-centered columns">
 	    <%= render 'nav', chapter: chapter %>
 		<h3>Chapter <%= chapter.id %> - <%= chapter.title %>    <%= render 'tweet' %></h3>

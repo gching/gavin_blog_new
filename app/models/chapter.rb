@@ -1,4 +1,6 @@
 class Chapter < ActiveRecord::Base
+	## Banner uploader
+	mount_uploader :banner, BannerUploader
 
 	## Make sure that title, body, and slug exist.
 	validates_presence_of :title, :body, :slug

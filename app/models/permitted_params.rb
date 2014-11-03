@@ -9,6 +9,6 @@ class PermittedParams < Struct.new(:params)#, :user)
     #else
       # [:name]
     #end
-    [:title, :body]
+    [:title, :body, :banner]
   end
 end

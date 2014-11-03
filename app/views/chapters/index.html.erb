@@ -1,20 +1,15 @@
 <%# content_for :head, auto_discovery_link_tag(:atom, feed_path) %>
-<ul class="orbit-me" data-orbit>
-  <%= render 'shared/orbit' %>
-</ul>
 
-  <div class="row">
-    <div class="small-11 small-centered columns">
-    <ol class="chapters">
-      <% chapters.order("created_at DESC").each do |chapter| %>
-      	<li id="<%= chapter.id %>">
-		<h3><%= link_to "Chapter #{chapter.id} - #{chapter.title}", chapter_path(chapter)  %></h3>
-		<h4 class="subheader">Had time to make this <%= time_ago_in_words(chapter.created_at)%> ago.</h4>
-		<!--<div class="row">
-		  <div class="small-9 small-centered large-uncentered columns"><p><%= chapter.body %></p></div>
-		</div>-->
-		</li>
-	  <% end %>
-	</ol>
+<section id="header-section" class="module parallax" style="background-image: url('/assets/picture2-web.jpg')">
+  <div class="container">
+    <h1>My Story</h1>
+  </div>
+</section>
+
+<% chapters.order("created_at DESC").each do |chapter| %>
+  <section id="<%=chapter.id%>-section" class="module parallax" style="background-image: url('<%= chapter.banner_url %>')">
+    <div class="container">
+      <h1><%= link_to "Chapter #{chapter.id}", chapter_path(chapter)  %></h1>
     </div>
-  </div>=
+  </section>
+<% end %>
