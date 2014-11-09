@@ -1,0 +1,36 @@
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
+$(function(){
+  if($('#showMe').length){
+    $('.header-fake').show();
+  }
+});
+
+$(window).scroll(function(){
+  if (!$('#showMe').length){
+    if($(window).scrollTop() >= 400) {
+      $('.header-fake').fadeIn('fast');
+    } else {
+      $('.header-fake').fadeOut('fast');
+    }
+  }
+});
+
+$(document).on('open', '[data-reveal]', function () {
+  $('body').toggleClass("stop-scrolling")
+  $('body').bind('touchmove', function(e){e.preventDefault()})
+  $('.about-me-btn').toggleClass("close-reveal-modal")
+});
+
+$(document).on('close', '[data-reveal]', function () {
+  $('body').toggleClass("stop-scrolling")
+  $('body').unbind('touchmove')
+  $('.about-me-btn').toggleClass("close-reveal-modal")
+});
+
+$('.about-me-btn').click(function(){
+  $('#aboutModal').foundation('reveal', 'close');
+})

@@ -1,4 +1,9 @@
 <% provide(:title, "Chapter #{chapter.id}") %>
+
+<!-- Hack for javascript to see which page it it -->
+<div id="showMe">
+</div>
+
 <section id="<%=chapter.id%>-section" class="module parallax" style="background-image: url('<%= chapter.banner_url %>')">
   <div class="container container-padding">
     <h1><%="Chapter #{chapter.id}"%></h1>
