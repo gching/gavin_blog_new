@@ -1,17 +1,19 @@
 <%# content_for :head, auto_discovery_link_tag(:atom, feed_path) %>
 
-<section id="header-section" class="module parallax" style="background-image: url('/assets/picture2-web.jpg');">
+<section id="header-section" class="module parallax" style="background-image: url('/assets/that-me.JPG');">
   <div class="container container-padding">
     <h1>My Story</h1>
-    <h2>A detailed book on my "rife" journey.</h2>
-    <div class="about-me"><a href="#" data-reveal-id="aboutModal" class="about-me-btn success button radius">Who dat?</a></div>
+    <div class="faded">
+      <h2>A detailed book on my "rife" journey.</h2>
+      <div class="about-me"><a href="#" data-reveal-id="aboutModal" class="about-me-btn success button radius">Who dat?</a></div>
+    </div>
   </div>
 </section>
 
 <% chapters.order("created_at DESC").each do |chapter| %>
   <section id="<%=chapter.id%>-section" class="module parallax" style="background-image: url('<%= chapter.banner_url %>')">
     <%= link_to chapter_path(chapter) do%>
-      <div class="container container-padding">
+      <div class="container container-padding faded">
         <h1><%= chapter.id  %></h1>
         <h2><%= chapter.title %></h2>
       </div>

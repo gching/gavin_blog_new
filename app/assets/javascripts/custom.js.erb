@@ -19,6 +19,12 @@ $(window).scroll(function(){
   }
 });
 
+$(".faded").hover(function() {
+  $( this ).fadeTo("fast", 1.0);
+}, function(){
+  $( this ).fadeTo("fast", 0.5);
+});
+
 $(document).on('open', '[data-reveal]', function () {
   $('body').toggleClass("stop-scrolling")
   $('body').bind('touchmove', function(e){e.preventDefault()})
