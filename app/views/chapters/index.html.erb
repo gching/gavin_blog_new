@@ -13,9 +13,9 @@
 <% chapters.order("created_at DESC").each do |chapter| %>
   <section id="<%=chapter.id%>-section" class="module parallax" style="background-image: url('<%= chapter.banner_url %>')">
     <%= link_to chapter_path(chapter) do%>
-      <div class="container container-padding faded">
+      <div class="container container-padding">
         <h1><%= chapter.id  %></h1>
-        <h2><%= chapter.title %></h2>
+        <h2 class="faded"><%= chapter.title %></h2>
       </div>
     <% end %>
 
