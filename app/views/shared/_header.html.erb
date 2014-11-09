@@ -1,7 +1,12 @@
 <div class="header-fake fixed">
   <div class="container">
     <div class="left">
-      <h1><%= link_to "My Story", root_path %> <small>A detailed book on my "rife" journey.   <%= link_to image_tag("feed-icon-28x28.png"), feed_path %></small>
+      <h1>
+        <% if current_page?(root_path) %>
+          <%= link_to "My Story", '#top'%>
+        <% else %>
+          <%= link_to "My Story", root_path %>
+        <% end %><small>A detailed book on my "rife" journey.   <%= link_to image_tag("feed-icon-28x28.png"), feed_path %></small>
       </h1>
     </div>
     <div class="right" style="padding-top: 15px;">

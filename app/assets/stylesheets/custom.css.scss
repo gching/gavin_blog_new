@@ -1,3 +1,7 @@
+.faded {
+  opacity: 0.5;
+}
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
@@ -57,6 +61,12 @@ section.module.parallax .about-me {
   text-align: center;
 }
 
+
+/* Footer */
+footer {
+  padding: 50px;
+}
+
 @media all and (min-width: 600px) {
 
   section.module.parallax h1 {
@@ -87,8 +97,4 @@ section.module.parallax .about-me {
   .header-fake h1 small {
     font-size: 16px;
   }
-}
-
-.faded {
-  opacity: 0.5;
 }
