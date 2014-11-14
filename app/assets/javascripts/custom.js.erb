@@ -19,10 +19,12 @@ $(window).scroll(function(){
   }
 });
 
-$(".faded").hover(function() {
-  $( this ).fadeTo("fast", 1.0);
+$(".section-fade").hover(function() {
+  $( '.faded', this).fadeTo("fast", 0.9);
+  $(this).fadeTo('fast', 1.0);
 }, function(){
-  $( this ).fadeTo("fast", 0.5);
+  $( '.faded', this).fadeTo("fast", 0.8);
+  $(this).fadeTo('fast', 0.6)
 });
 
 $(document).on('open', '[data-reveal]', function () {
