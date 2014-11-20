@@ -44,4 +44,5 @@ production:
   adapter: postgresql
   encoding: unicode
   database: gavin_production
+  username: gching
   pool: 5

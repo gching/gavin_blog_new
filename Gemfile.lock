@@ -327,6 +327,7 @@ DEPENDENCIES
   rails (= 4.0.3)
   rails_12factor
   rails_admin
+  rake (= 10.3.2)
   rspec-nc
   rspec-rails (~> 2.14.0)
   sass-rails (~> 4.0.3)
