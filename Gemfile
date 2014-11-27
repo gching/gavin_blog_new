@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 ruby "2.0.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
-## Force bundle to get rake
-gem 'rake', '10.3.2'
 
 # Use postgresql
 gem 'pg'
@@ -16,6 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
+
 
 
 ################## Styling #####################
@@ -64,6 +63,10 @@ gem 'faker', "~> 1.1.2"
 # Use unicorn as the app server
 gem 'unicorn'
 
+## Deployment - Capistrano
+gem 'capistrano', '~> 3.2.0'
+gem 'capistrano-rails'
+gem 'capistrano-rvm'
 
 ## Use devise for a simple easy user setup
 gem "devise"
