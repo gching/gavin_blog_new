@@ -44,7 +44,7 @@ gem 'ckeditor'
 gem "carrierwave"
 
 ## Used to handle image converting and uploading
-gem "mini_magick"
+gem "mini_magick", '~> 3.8.0'
 
 ## Helps with connection with AWS.
 gem 'fog', '~> 1.24.0'#, :git => 'https://github.com/fog/fog.git'

@@ -1,6 +1,6 @@
 # encoding: utf-8
 class CkeditorPictureUploader < CarrierWave::Uploader::Base
-  
+
   include Ckeditor::Backend::CarrierWave
 
   # Include RMagick or ImageScience support:
@@ -32,7 +32,7 @@ class CkeditorPictureUploader < CarrierWave::Uploader::Base
   process :read_dimensions
 
   # Create different versions of your uploaded files:
-=begin
+  ## These are neccessary for Ckeditor (for sure thumb, but not sure about content)
   version :thumb do
     process :resize_to_fill => [118, 100]
   end
@@ -40,7 +40,7 @@ class CkeditorPictureUploader < CarrierWave::Uploader::Base
   version :content do
     process :resize_to_limit => [800, 800]
   end
-=end
+
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
   def extension_white_list
