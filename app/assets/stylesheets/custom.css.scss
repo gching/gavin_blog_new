@@ -64,10 +64,15 @@ section.module.parallax .about-me {
   text-align: center;
 }
 
+/* Comments */
+.comment-pad {
+  padding-bottom: 20px;
+}
 
 /* Footer */
 footer {
   padding: 50px;
+  background-color: #eaf9fc;
 }
 
 @media all and (min-width: 600px) {
