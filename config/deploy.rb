@@ -25,7 +25,7 @@ set :rvm_ruby, '2.0.0'
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, %w{config/database.yml config/unicorn.rb config/unicorn_init.sh}
+set :linked_files, %w{config/database.yml config/application.yml config/unicorn.rb config/unicorn_init.sh}
 
 # Default value for linked_dirs is []
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}

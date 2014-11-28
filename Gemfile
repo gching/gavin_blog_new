@@ -47,7 +47,7 @@ gem "carrierwave"
 gem "mini_magick"
 
 ## Helps with connection with AWS.
-gem 'fog', :git => 'https://github.com/fog/fog.git'
+gem 'fog', '~> 1.24.0'#, :git => 'https://github.com/fog/fog.git'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
