@@ -4,7 +4,7 @@ ruby "2.0.0"
 gem 'rails', '4.0.3'
 
 # Use postgresql
-gem 'pg'
+gem 'pg', '~> 0.17.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -27,7 +27,7 @@ gem 'foundation-icons-sass-rails'
 ###############################################
 
 ## To configure environment constants
-gem 'figaro'
+gem 'figaro', "~> 1.0.0"
 
 ## To properly set up assets for Heroku with Rails 4 --Ck_editor does not work
 gem 'rails_12factor', group: :production
@@ -36,12 +36,12 @@ gem 'rails_12factor', group: :production
 gem 'twitter-text'
 
 # For backend admin dashboard
-gem 'rails_admin'
+gem 'rails_admin', '~> 0.6.5'
 # Editor for chapters.
-gem 'ckeditor'
+gem 'ckeditor', '~> 4.1.0'
 
 ## Used to upload files to AWS
-gem "carrierwave"
+gem "carrierwave", '~> 0.10.0'
 
 ## Used to handle image converting and uploading
 gem "mini_magick", '~> 3.8.0'
@@ -61,7 +61,7 @@ gem 'faker', "~> 1.1.2"
 
 
 # Use unicorn as the app server
-gem 'unicorn'
+gem 'unicorn', '~> 4.8.3'
 
 ## Deployment - Capistrano
 gem 'capistrano', '~> 3.2.0'
@@ -69,7 +69,7 @@ gem 'capistrano-rails'
 gem 'capistrano-rvm'
 
 ## Use devise for a simple easy user setup
-gem "devise"
+gem "devise", '~> 3.4.1'
 
 
 ## Use new relic to monitor blog.

@@ -349,14 +349,14 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   capybara (~> 2.1.0)
-  carrierwave
-  ckeditor
+  carrierwave (~> 0.10.0)
+  ckeditor (~> 4.1.0)
   coffee-rails (~> 4.0.0)
   database_cleaner
-  devise
+  devise (~> 3.4.1)
   factory_girl_rails (~> 4.2.1)
   faker (~> 1.1.2)
-  figaro
+  figaro (~> 1.0.0)
   fog (~> 1.24.0)
   foundation-icons-sass-rails
   foundation-rails
@@ -366,12 +366,12 @@ DEPENDENCIES
   jquery-rails
   mini_magick (~> 3.8.0)
   newrelic_rpm
-  pg
+  pg (~> 0.17.1)
   pry
   rack-mini-profiler
   rails (= 4.0.3)
   rails_12factor
-  rails_admin
+  rails_admin (~> 0.6.5)
   rspec-nc
   rspec-rails (~> 2.14.0)
   sass-rails (~> 4.0.3)
@@ -381,5 +381,5 @@ DEPENDENCIES
   turbolinks
   twitter-text
   uglifier (>= 1.3.0)
-  unicorn
+  unicorn (~> 4.8.3)
   zeus
