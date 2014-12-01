@@ -11,7 +11,7 @@
 }
 
 .header-img {
-  background-image: url(<%= asset_path "that-me.jpg" %>);
+  background-image: image-url('that-me.jpg');
 }
 
 .header-fake {
