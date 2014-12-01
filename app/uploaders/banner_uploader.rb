@@ -43,7 +43,7 @@ class BannerUploader < CarrierWave::Uploader::Base
 
   ## Defaults to one of the 4 images!
   def default_url
-    ActionController::Base.helpers.asset_path(["default-1.JPG", "default-2.JPG", "default-3.JPG", "default-4.JPG"].sample)
+    ActionController::Base.helpers.asset_path(["default-1.jpg", "default-2.jpg", "default-3.jpg", "default-4.jpg"].sample)
   end
 
   # Override the filename of the uploaded files:
